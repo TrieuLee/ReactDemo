@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from 'react';
+import './App.css';
+import TodoItem from './components/ToDoItem';
 function App() {
+  const todoItems =[
+    {title:'Đi mua cá',isComplete:true},
+    {title:'Đi mua gà'},
+    {title:'Đi mua rau'}
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        todoItems.map((item,index) =>
+         <TodoItem key={index} item={item}/>)
+      }
     </div>
   );
 }
