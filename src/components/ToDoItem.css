@@ -2,8 +2,20 @@
     font-weight: 300;
     font-size: 24px;
     color: #4d4d4d;
+    padding:10px 5px;
+    border-bottom: 1px solid #bebebe;
+    display: flex;
 }
-.ToDoItem-complete{
+.ToDoItem:last-child{
+    border-bottom: none;
+}
+.ToDoItem > p{
+    margin: 0 0 0 15px ;  
+}
+.ToDoItem-complete {
     text-decoration: line-through;
     opacity: 0.3;
+}
+.removebtn{
+    margin-right: 0;
 }
