@@ -108,20 +108,20 @@ class App extends Component{
         arr.length===0&&'Nothing here'
       }
       <footer class="footer">
-				<span class="todo-count"><strong>{this.state.todoItems.length-arr.length}</strong> item left</span>
-				<ul class="filters">
-					<li>  
-              <a class="selected" href="#/" onClick={this.clickAll}>All</a>
-					</li>
-					<li>
-						<a href="#/active" onClick={this.clickActive}>Active</a>
-					</li>
-					<li>
-						<a href="#/completed" onClick={this.clickComplete}>Completed</a>
-					</li>
-				</ul>
-				<button class="clear-completed" onClick={this.clickClearAll}>Clear completed</button>
-			</footer>
+		<span class="todo-count"><strong>{this.state.todoItems.length-arr.length}</strong> item left</span>
+		<ul class="filters">
+			<li>  
+			<a class="selected" href="#/" onClick={this.clickAll}>All</a>
+			</li>
+			<li>
+				<a href="#/active" onClick={this.clickActive}>Active</a>
+			</li>
+			<li>
+				<a href="#/completed" onClick={this.clickComplete}>Completed</a>
+			</li>
+		</ul>
+		<button class="clear-completed" onClick={this.clickClearAll}>Clear completed</button>
+	</footer>
     </section>
     )
   }
